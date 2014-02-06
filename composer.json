@@ -1,0 +1,19 @@
+{
+    "name": "sobit/paylane",
+    "description": "PayLane REST Client",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Sobit Akhmedov",
+            "email": "sobit.akhmedov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "lib-curl": "*"
+    },
+    "autoload": {
+        "psr-4": { "PayLane": "." }
+    }
+}
