@@ -14,6 +14,6 @@
         "lib-curl": "*"
     },
     "autoload": {
-        "psr-4": { "PayLane": "." }
+        "psr-4": { "PayLane\\": "" }
     }
 }
