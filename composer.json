@@ -1,8 +1,10 @@
 {
     "name": "sobit/paylane",
+    "type": "library",
     "description": "PayLane REST Client",
+    "keywords": ["paylane"],
+    "homepage": "http://devzone.paylane.com/api-guide/",
     "license": "MIT",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Sobit Akhmedov",
@@ -15,5 +17,11 @@
     },
     "autoload": {
         "psr-4": { "PayLane\\": "" }
+    },
+    "target-dir": "PayLane/",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
