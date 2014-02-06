@@ -1,7 +1,7 @@
 {
     "name": "sobit/paylane",
     "type": "library",
-    "description": "PayLane REST Client",
+    "description": "The original PayLane REST client optimized to be used with Composer.",
     "keywords": ["paylane"],
     "homepage": "http://devzone.paylane.com/api-guide/",
     "license": "MIT",
@@ -19,9 +19,4 @@
         "psr-0": { "PayLane\\": "" }
     },
     "target-dir": "PayLane/",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
-    }
 }
