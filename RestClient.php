@@ -414,7 +414,7 @@ class RestClient
      * Checking error mechanism
      *
      * @param array $validateArray
-     * @throws Exception
+     * @throws \Exception
      */
     protected function checkForErrors(&$validate_params)
     {
@@ -422,7 +422,7 @@ class RestClient
         {
             if ($key)
             {
-                throw new Exception($error);
+                throw new \Exception($error);
             }
         }
     }
@@ -452,7 +452,7 @@ class RestClient
      * @param string $method_type
      * @param string $request - JSON
      * @return array
-     * @throws Exception
+     * @throws \Exception
      */
     protected function pushData($method, $method_type, $request)
     {
@@ -475,12 +475,12 @@ class RestClient
 
         if (isset($this->http_errors[$http_code]))
         {
-            throw new Exception('Response Http Error - ' . $this->http_errors[$http_code]);
+            throw new \Exception('Response Http Error - ' . $this->http_errors[$http_code]);
         }
 
         if (0 < curl_errno($ch))
         {
-            throw new Exception('Unable to connect to ' . self::$api_url . ' Error: ' . curl_error($ch));
+            throw new \Exception('Unable to connect to ' . self::$api_url . ' Error: ' . curl_error($ch));
         }
 
         curl_close($ch);
